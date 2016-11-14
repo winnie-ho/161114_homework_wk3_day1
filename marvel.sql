@@ -65,7 +65,8 @@ INSERT INTO people (name) VALUES ('Frederico Zucca');
 -- SELECT (name) FROM people;
 
 -- 3. Return ONLY your name from the 'people' table.
--- SELECT * FROM people WHERE id = 12;
+SELECT name FROM people WHERE name = 'Winnie Ho';
+
 
 -- 4. The cinema is showing 'Batman Begins', but Batman is DC, not Marvel! Delete the entry from the 'movies' table.
 -- DELETE FROM movies WHERE title = 'Batman Begins';
