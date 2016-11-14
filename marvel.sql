@@ -82,7 +82,6 @@ INSERT INTO people (name) VALUES ('Frederico Zucca');
 -- 7. Somehow the list of people includes two people named 'Adam'. Change these entries to the proper names (Jeff 3, Jeff 3.2)
 -- UPDATE people SET name = 'Jeff' WHERE name = 'Adam Leel';
 -- UPDATE people SET name = 'Jeff 3.2' WHERE name = 'Adam Nattrass';
-
 -- SELECT * FROM people;
 
 -- 8. The cinema has just heard that they will be holding an exclusive midnight showing of 'Guardians of the Galaxy 2'!! Create a new entry in the 'movies' table to reflect this.
@@ -90,7 +89,12 @@ INSERT INTO people (name) VALUES ('Frederico Zucca');
 -- SELECT * FROM movies
 
 -- 9. The cinema would also like to make the Guardian movies a back to back feature. Update the 'Guardians of the Galaxy' show time from 12:10 to 21:30
-UPDATE movies SET show_time = '21:30' WHERE title = 'Guardians of the Galaxy';
-SELECT * FROM movies
+-- UPDATE movies SET show_time = '21:30' WHERE title = 'Guardians of the Galaxy';
+-- SELECT * FROM movies
 
+-- ## Extension
 
+-- 1. Research how to delete multiple entries from your table in a single command.
+
+-- DELETE FROM people WHERE id IN (3, 7);
+-- SELECT * FROM people;
